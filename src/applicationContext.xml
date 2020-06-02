@@ -9,9 +9,11 @@
 
     <!-- Define your beans here -->
     <bean id = "myCoach"
-        class = "com.allen.springdemo.TrackCoach">
+        class = "com.allen.springdemo.BasketballCoach">
 
     </bean>
+
+
     
 </beans>
 
