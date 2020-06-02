@@ -8,15 +8,23 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
-    <bean id = "myFortune"
+    <bean id = "myFortuneService"
         class = "com.allen.springdemo.HappyFortuneService">
 
     </bean>
 
-    <!-- Define injection -->
+
     <bean id = "myCoach"
         class = "com.allen.springdemo.BasketballCoach">
-        <constructor-arg ref="myFortune"/>
+        <!-- Define injection -->
+        <constructor-arg ref="myFortuneService"/>
+    </bean>
+
+    <bean id = "myCricketCoach"
+        class = "com.allen.springdemo.CricketCoach">
+        <!-- Define setter injection-->
+        <property name="fortuneService" ref="myFortuneService"/>
+
     </bean>
 
 
