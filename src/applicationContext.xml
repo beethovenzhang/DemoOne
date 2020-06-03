@@ -11,7 +11,7 @@
 
     <!-- Define your beans here -->
     <bean id = "myFortuneService"
-        class = "com.allen.springdemo.HappyFortuneService">
+        class = "com.allen.springdemo.RandomFortuneService">
 
     </bean>
 
